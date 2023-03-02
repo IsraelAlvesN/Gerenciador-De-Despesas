@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 
 import {filterListByMonth, getCurrentMonth} from './helpers/dateFilter'
 import { TableArea } from './components/TableArea'
+import { InfoArea } from './components/InfoArea'
 
 const App = () => {
   const [list, setList] = useState(items)
@@ -25,6 +26,7 @@ const App = () => {
       </C.Header>
       <C.Body>
         {/* Area de informações */}
+        <InfoArea currentMonth={currentMonth}/>
 
         {/* Area de inserir informações */}
 
